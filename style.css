@@ -1,0 +1,24 @@
+@import url(style2.scss);
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  font-size: 4;
+  color: blue;
+  background-color: black;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: navy;
+}
+
+button {
+  border-radius: 5px;
+  border-color: red;
+  color: Uop(aquamarine);
+}/*# sourceMappingURL=style.css.map */

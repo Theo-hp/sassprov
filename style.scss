@@ -1,0 +1,47 @@
+@import url(style2.scss);
+
+@function Multi($num){
+    @return $num * 2;
+}
+
+@function Not($bgc){
+    @if(lightness($bgc) < 50){
+        @return white;
+    } @else{
+        @return black,
+    }
+}
+
+$colorr: navy;
+
+@mixin but{
+    border-radius: 5px;
+    border-color: red;
+}
+
+@mixin colors{
+    color: blue;
+    background-color: black;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    font-size: Multi(2);
+    @include colors;
+}
+
+h2{
+    color: Not(aquamarine);
+}
+
+p{
+    color: $colorr;
+}
+
+button{
+    @include but;
+    color: Uop(aquamarine);
+}
